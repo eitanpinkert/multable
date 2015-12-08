@@ -1,0 +1,44 @@
+
+.mul_table {
+	border: 0px;
+}
+
+.mul_tr {
+	background-color: #ffffff;
+}
+
+.hover_tr {
+	background-color: #00ff00;
+}
+
+.label_td {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 700;
+	color: #0000FF;
+}
+
+.mul_td {
+	width: 50px;
+	height: 50px;
+}
+
+.mul_input {
+	width: 70px;
+	height: 70px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #336600;
+	text-align: center;
+	border: 1px solid green;
+}
+
+.mul_input_wrong {
+	width: 70px;
+	height: 70px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #CC0000;
+	text-align: center;
+	border: 1px solid green;
+}

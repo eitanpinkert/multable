@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mul_style.css">
+		<script src="mul_scripts.js"></script>
+	</head>
+	<body onload="init()">
+		<audio id="mul_sound" type="audio/mpeg" autoplay></audio>
+		<form>
+		<table>
+			<tr>
+				<td id="label_1" span="10" class="label_td"></td>
+			</tr>
+			<tr>
+			<td>
+				<table class="mul_table">
+					<tr>
+						<td class="mul_td"><input type="text" id="c_1_1" class="mul_input" maxlength="2" value="1" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_2" class="mul_input" maxlength="2" value="2" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_3" class="mul_input" maxlength="2" value="3" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_4" class="mul_input" maxlength="2" value="4" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_5" class="mul_input" maxlength="2" value="5" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_6" class="mul_input" maxlength="2" value="6" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_7" class="mul_input" maxlength="2" value="7" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_8" class="mul_input" maxlength="2" value="8" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_9" class="mul_input" maxlength="2" value="9" disabled></td>
+						<td class="mul_td"><input type="text" id="c_1_10" class="mul_input" maxlength="2" value="10" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_2_1" class="mul_input" maxlength="2" value="2" disabled></td>
+						<td class="mul_td"><input type="text" id="c_2_2" class="mul_input" maxlength="2" onkeyup="change_cell(2,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_3" class="mul_input" maxlength="2" onkeyup="change_cell(2,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_4" class="mul_input" maxlength="2" onkeyup="change_cell(2,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_5" class="mul_input" maxlength="2" onkeyup="change_cell(2,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_6" class="mul_input" maxlength="2" onkeyup="change_cell(2,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_7" class="mul_input" maxlength="2" onkeyup="change_cell(2,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_8" class="mul_input" maxlength="2" onkeyup="change_cell(2,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_9" class="mul_input" maxlength="2" onkeyup="change_cell(2,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_2_10" class="mul_input" maxlength="2" value="20" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_3_1" class="mul_input" maxlength="2" value="3" disabled></td>
+						<td class="mul_td"><input type="text" id="c_3_2" class="mul_input" maxlength="2" onkeyup="change_cell(3,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_3" class="mul_input" maxlength="2" onkeyup="change_cell(3,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_4" class="mul_input" maxlength="2" onkeyup="change_cell(3,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_5" class="mul_input" maxlength="2" onkeyup="change_cell(3,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_6" class="mul_input" maxlength="2" onkeyup="change_cell(3,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_7" class="mul_input" maxlength="2" onkeyup="change_cell(3,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_8" class="mul_input" maxlength="2" onkeyup="change_cell(3,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_9" class="mul_input" maxlength="2" onkeyup="change_cell(3,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_3_10" class="mul_input" maxlength="2" value="30" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_4_1" class="mul_input" maxlength="2" value="4" disabled></td>
+						<td class="mul_td"><input type="text" id="c_4_2" class="mul_input" maxlength="2" onkeyup="change_cell(4,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_3" class="mul_input" maxlength="2" onkeyup="change_cell(4,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_4" class="mul_input" maxlength="2" onkeyup="change_cell(4,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_5" class="mul_input" maxlength="2" onkeyup="change_cell(4,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_6" class="mul_input" maxlength="2" onkeyup="change_cell(4,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_7" class="mul_input" maxlength="2" onkeyup="change_cell(4,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_8" class="mul_input" maxlength="2" onkeyup="change_cell(4,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_9" class="mul_input" maxlength="2" onkeyup="change_cell(4,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_4_10" class="mul_input" maxlength="2" value="40" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_5_1" class="mul_input" maxlength="2" value="5" disabled></td>
+						<td class="mul_td"><input type="text" id="c_5_2" class="mul_input" maxlength="2" onkeyup="change_cell(5,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_3" class="mul_input" maxlength="2" onkeyup="change_cell(5,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_4" class="mul_input" maxlength="2" onkeyup="change_cell(5,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_5" class="mul_input" maxlength="2" onkeyup="change_cell(5,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_6" class="mul_input" maxlength="2" onkeyup="change_cell(5,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_7" class="mul_input" maxlength="2" onkeyup="change_cell(5,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_8" class="mul_input" maxlength="2" onkeyup="change_cell(5,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_9" class="mul_input" maxlength="2" onkeyup="change_cell(5,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_5_10" class="mul_input" maxlength="2" value="50" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_6_1" class="mul_input" maxlength="2" value="6" disabled></td>
+						<td class="mul_td"><input type="text" id="c_6_2" class="mul_input" maxlength="2" onkeyup="change_cell(6,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_3" class="mul_input" maxlength="2" onkeyup="change_cell(6,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_4" class="mul_input" maxlength="2" onkeyup="change_cell(6,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_5" class="mul_input" maxlength="2" onkeyup="change_cell(6,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_6" class="mul_input" maxlength="2" onkeyup="change_cell(6,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_7" class="mul_input" maxlength="2" onkeyup="change_cell(6,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_8" class="mul_input" maxlength="2" onkeyup="change_cell(6,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_9" class="mul_input" maxlength="2" onkeyup="change_cell(6,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_6_10" class="mul_input" maxlength="2" value="60" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_7_1" class="mul_input" maxlength="2" value="7" disabled></td>
+						<td class="mul_td"><input type="text" id="c_7_2" class="mul_input" maxlength="2" onkeyup="change_cell(7,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_3" class="mul_input" maxlength="2" onkeyup="change_cell(7,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_4" class="mul_input" maxlength="2" onkeyup="change_cell(7,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_5" class="mul_input" maxlength="2" onkeyup="change_cell(7,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_6" class="mul_input" maxlength="2" onkeyup="change_cell(7,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_7" class="mul_input" maxlength="2" onkeyup="change_cell(7,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_8" class="mul_input" maxlength="2" onkeyup="change_cell(7,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_9" class="mul_input" maxlength="2" onkeyup="change_cell(7,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_7_10" class="mul_input" maxlength="2" value="70" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_8_1" class="mul_input" maxlength="2" value="8" disabled></td>
+						<td class="mul_td"><input type="text" id="c_8_2" class="mul_input" maxlength="2" onkeyup="change_cell(8,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_3" class="mul_input" maxlength="2" onkeyup="change_cell(8,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_4" class="mul_input" maxlength="2" onkeyup="change_cell(8,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_5" class="mul_input" maxlength="2" onkeyup="change_cell(8,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_6" class="mul_input" maxlength="2" onkeyup="change_cell(8,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_7" class="mul_input" maxlength="2" onkeyup="change_cell(8,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_8" class="mul_input" maxlength="2" onkeyup="change_cell(8,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_9" class="mul_input" maxlength="2" onkeyup="change_cell(8,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_8_10" class="mul_input" maxlength="2" value="80" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_9_1" class="mul_input" maxlength="2" value="9" disabled></td>
+						<td class="mul_td"><input type="text" id="c_9_2" class="mul_input" maxlength="2" onkeyup="change_cell(9,2,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_3" class="mul_input" maxlength="2" onkeyup="change_cell(9,3,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_4" class="mul_input" maxlength="2" onkeyup="change_cell(9,4,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_5" class="mul_input" maxlength="2" onkeyup="change_cell(9,5,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_6" class="mul_input" maxlength="2" onkeyup="change_cell(9,6,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_7" class="mul_input" maxlength="2" onkeyup="change_cell(9,7,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_8" class="mul_input" maxlength="2" onkeyup="change_cell(9,8,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_9" class="mul_input" maxlength="2" onkeyup="change_cell(9,9,event)"></td>
+						<td class="mul_td"><input type="text" id="c_9_10" class="mul_input" maxlength="2" value="90" disabled></td>
+					</tr>
+					<tr>
+						<td class="mul_td"><input type="text" id="c_10_1" class="mul_input" maxlength="2" value="10" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_2" class="mul_input" maxlength="2" value="20" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_3" class="mul_input" maxlength="2" value="30" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_4" class="mul_input" maxlength="2" value="40" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_5" class="mul_input" maxlength="2" value="50" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_6" class="mul_input" maxlength="2" value="60" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_7" class="mul_input" maxlength="2" value="70" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_8" class="mul_input" maxlength="2" value="80" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_9" class="mul_input" maxlength="2" value="90" disabled></td>
+						<td class="mul_td"><input type="text" id="c_10_10" class="mul_input" maxlength="3" value="100" disabled></td>
+					</tr>
+				</table>
+			</td>
+			<td><img id="fun_pic" height="700"></td>
+			</tr>
+			<tr>
+				<td id="label_2" span="10" class="label_td"></td>
+			</tr>
+		</table>
+		</form>
+		<div onclick="fill_all()">x</div>
+		<script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@pinkert">Eitan Pinkert</a>
+	</body>
+</html>
