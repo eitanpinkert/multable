@@ -67,7 +67,7 @@ Typical reasons `ready_for_debit` is `False`:
 ### 4. `is_client_full_pay` Is `True`
 
 When `is_client_full_pay` is `True`, the client has already paid back the full
-advance amount (possibly ahead of schedule). The handler recognises the deal as
+advance amount (possibly ahead of schedule). The handler recognizes the deal as
 fully settled and skips DPD incrementing.
 
 ### 5. All Due Installments Have Been Paid On Time
